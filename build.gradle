@@ -25,4 +25,5 @@ dependencies {
         exclude module: "spring-boot-starter-tomcat"
     }
     compile("org.springframework.boot:spring-boot-starter-undertow")
+    compile("org.pegdown:pegdown:1.4.2")
 }
