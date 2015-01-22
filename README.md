@@ -6,21 +6,21 @@ Sleek is a lightweight static blog generator using Java, Spring Boot, Undertow, 
 ### TODO: ###
 
 #### v.0.1 ####
-> Thymeleaf as default template for pages
-> Support for Markdown, AsciiDoc, Thymeleaf, Jade and HTML templates
+> * Thymeleaf as default template for pages
+> * Support for Markdown, AsciiDoc, Thymeleaf, Jade and HTML templates
  
 #### v.0.2 ####
-> Config
-> Tasks for generate content
+> * Config
+> * Tasks for generate content
  
 #### v.0.3 ####
-> Themes
+> * Themes
  
 #### v.0.4 ####
-> Integrate with Dropbox
+> * Integrate with Dropbox
  
 #### v.0.5 ####
-> Plugins
+> * Plugins
  
 #### v.0.6 ####
-> Cache
+> * Cache
