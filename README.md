@@ -1,7 +1,7 @@
 Sleek
 =====
 
-Sleek is a lightweight static blog generator using Java, Spring Boot, Undertow, Markdown and Gradle. 
+Sleek is a lightweight static blog generator using Java, Spring Boot, Undertow and Gradle. 
 
 [![Build Status](https://travis-ci.org/tjanek/sleek.svg?branch=master)](https://travis-ci.org/tjanek/sleek)
 
@@ -23,6 +23,4 @@ Sleek is a lightweight static blog generator using Java, Spring Boot, Undertow, 
  
 #### v.0.5 ####
 > * Plugins
- 
-#### v.0.6 ####
-> * Cache
+
