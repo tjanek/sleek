@@ -29,7 +29,7 @@ public class TemplatesProcessor {
 
     public String processTemplate(Template template) {
         TemplateEngine templateEngine = templateEnginesDefinitionsByExtension.get(template.extension);
-        Preconditions.checkNotNull(templateEngine, "Not supported template");
+        Preconditions.checkNotNull(templateEngine, "Not supported template: " + template.extension);
         return templateEngine.processDocument(template.content);
     }
 
