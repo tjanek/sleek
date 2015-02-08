@@ -1,6 +1,7 @@
 buildscript {
     repositories {
         mavenCentral()
+        maven { url "http://oss.sonatype.org/content/repositories/snapshots/" }
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.1.RELEASE")
@@ -11,6 +12,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
+apply plugin: "groovy"
 
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
@@ -22,6 +24,7 @@ jar {
 
 repositories {
     mavenCentral()
+    maven { url "http://oss.sonatype.org/content/repositories/snapshots/" }
 }
 
 dependencies {
@@ -32,6 +35,8 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-undertow")
     compile("org.pegdown:pegdown:1.4.2")
     compile('com.google.guava:guava:18.0')
+    testCompile "org.codehaus.groovy:groovy-all:2.4.0"
+    testCompile "org.spockframework:spock-core:1.0-groovy-2.3-SNAPSHOT"
 }
 
 idea {
