@@ -7,8 +7,9 @@
 </head>
 <body>
 
+    <h1>Posts:</h1>
     <div th:each="post : ${posts}" th:remove="tag">
-        <h1 th:text="${post}">Post</h1>
+        <a th:href="@{/post/__${post.name}__}"><h3 th:text="${post.label}">Post</h3></a>
     </div>
 
 </body>
