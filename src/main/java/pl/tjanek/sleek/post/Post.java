@@ -6,11 +6,18 @@ package pl.tjanek.sleek.post;
  */
 public final class Post {
 
-    public final String name;
-    public final String label;
+    private final String templateFilename;
 
-    public Post(String name) {
-        this.name = name;
-        this.label = name.toUpperCase();
+    public Post(String templateFilename) {
+        this.templateFilename = templateFilename;
     }
+
+    public String at() {
+        return "";
+    }
+
+    public String name() {
+        return "";
+    }
+
 }
