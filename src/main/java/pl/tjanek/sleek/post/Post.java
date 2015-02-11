@@ -2,6 +2,7 @@ package pl.tjanek.sleek.post;
 
 /**
  * Post
+ * TODO: Get date and post name from meta post config
  * @author Tomasz Janek
  */
 public final class Post {
@@ -13,11 +14,11 @@ public final class Post {
     }
 
     public String at() {
-        return "";
+        return this.templateFilename.substring(0, 10);
     }
 
     public String name() {
-        return "";
+        return this.templateFilename.substring(11).replaceAll("-", " ");
     }
 
 }

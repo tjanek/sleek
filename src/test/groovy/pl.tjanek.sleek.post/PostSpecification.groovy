@@ -13,6 +13,6 @@ class PostSpecification extends Specification {
 
         where:
         filename                | name         | at
-        "2015-02-01-first-post" | "First post" | "2015-02-01"
+        "2015-02-01-first-post" | "first post" | "2015-02-01"
     }
 }
