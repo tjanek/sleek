@@ -1,6 +1,7 @@
 package pl.tjanek.sleek.template.engine;
 
 import com.google.common.base.Preconditions;
+import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -17,8 +18,8 @@ import java.util.Map;
 @Component
 public class TemplatesProcessor {
 
-    @Autowired
-    private List<TemplateEngine> availableTemplateEngines;
+    @Autowired(required = false)
+    private List<TemplateEngine> availableTemplateEngines = Lists.newArrayList();
 
     private Map<String, TemplateEngine> templateEnginesDefinitionsByExtension = Maps.newConcurrentMap();
 
