@@ -10,6 +10,7 @@ class PostSpecification extends Specification {
         expect:
         post.name == name
         post.at == at
+        post.link == filename
 
         where:
         filename                | name         | at
