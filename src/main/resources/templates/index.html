@@ -9,7 +9,7 @@
 
     <h1>Posts:</h1>
     <div th:each="post : ${posts}" th:remove="tag">
-        <a th:href="@{/post/__${post.name}__}"><h3 th:text="${post.label}">Post</h3></a>
+        <a th:href="@{/post/__${post.link}__}"><h3 th:text="|${post.at} ${post.name}|">Post</h3></a>
     </div>
 
 </body>

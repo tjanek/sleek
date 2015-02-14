@@ -8,8 +8,8 @@ class PostSpecification extends Specification {
         Post post = new Post(filename)
 
         expect:
-        post.name() == name
-        post.at() == at
+        post.name == name
+        post.at == at
 
         where:
         filename                | name         | at

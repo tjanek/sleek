@@ -13,12 +13,16 @@ public final class Post {
         this.templateFilename = templateFilename;
     }
 
-    public String at() {
+    public String getAt() {
         return this.templateFilename.substring(0, 10);
     }
 
-    public String name() {
+    public String getName() {
         return this.templateFilename.substring(11).replaceAll("-", " ");
+    }
+
+    public String getLink() {
+        return this.templateFilename;
     }
 
 }
