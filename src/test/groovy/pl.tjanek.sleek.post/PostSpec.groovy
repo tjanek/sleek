@@ -1,7 +1,7 @@
 import pl.tjanek.sleek.post.Post
 import spock.lang.Specification
 
-class PostSpecification extends Specification {
+class PostSpec extends Specification {
 
     def "should return valid date and name from post filename"() {
         given:
