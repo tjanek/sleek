@@ -12,8 +12,9 @@ class PostRepositorySpec extends Specification {
     @Autowired
     PostRepository postRepository
 
-    def "should return 2 posts"() {
+    def "should return all posts"() {
         expect:
         postRepository.getAllPosts().size() == 2
     }
+
 }
