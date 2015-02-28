@@ -19,7 +19,7 @@ class PostRepositorySpec extends Specification {
 
     def "should return valid post names and dates"() {
         when:
-        def allPosts = postRepository.getAllPosts()
+        def allPosts = postRepository.allPosts
 
         then:
         allPosts[0].at == "2015-02-16"
