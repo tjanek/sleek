@@ -22,11 +22,11 @@ class PostRepositorySpec extends Specification {
         def allPosts = postRepository.allPosts
 
         then:
-        allPosts[0].at == "2015-02-16"
-        allPosts[0].name == "first post"
-        allPosts[0].link == "2015-02-16-first-post"
-        allPosts[1].at == "2015-02-17"
-        allPosts[1].name == "second post"
-        allPosts[1].link == "2015-02-17-second-post"
+        allPosts[postNumber].link == link
+
+        where:
+        postNumber || link
+        0          || "2015-02-16-first-post"
+        1          || "2015-02-17-second-post"
     }
 }
