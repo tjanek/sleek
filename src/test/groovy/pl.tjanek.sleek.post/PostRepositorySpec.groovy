@@ -17,7 +17,7 @@ class PostRepositorySpec extends Specification {
         postRepository.allPosts.size() == 2
     }
 
-    def "should return valid post names and dates"() {
+    def "should return valid post links"() {
         when:
         def allPosts = postRepository.allPosts
 
@@ -28,5 +28,15 @@ class PostRepositorySpec extends Specification {
         postNumber || link
         0          || "2015-02-16-first-post"
         1          || "2015-02-17-second-post"
+    }
+
+    def "should return posts content"() {
+        expect:
+        postRepository.getPostContentByName(postName) == postContent
+
+        where:
+        postName                 || postContent
+        "2015-02-16-first-post"  || "#First post\n\n[First post](http://example.com/2015-02-16-first-post)"
+        "2015-02-17-second-post" || "#Second post\n\n[Second post](http://example.com/2015-02-17-second-post)"
     }
 }

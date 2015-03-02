@@ -29,9 +29,16 @@ public class TemplatesProcessor {
     }
 
     public String processTemplate(Template template) {
-        TemplateEngine templateEngine = templateEnginesDefinitionsByExtension.get(template.extension);
-        Preconditions.checkNotNull(templateEngine, "Not supported template: " + template.extension);
+        TemplateEngine templateEngine = lookupSupportedTemplateEngine(template);
         return templateEngine.processDocument(template.content);
+    }
+
+    private TemplateEngine lookupSupportedTemplateEngine(Template template) {
+        TemplateEngine templateEngine = templateEnginesDefinitionsByExtension.get(template.extension);
+        if (templateEngine == null) {
+            templateEngine = new DefaultRawTemplateEngine();
+        }
+        return templateEngine;
     }
 
     private void registerTemplateEngines() {
