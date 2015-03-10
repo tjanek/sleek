@@ -1,11 +1,11 @@
-package pl.tjanek.sleek.template.engine;
+package pl.tjanek.sleek.template;
 
-import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import pl.tjanek.sleek.template.Template;
+import pl.tjanek.sleek.template.engine.DefaultRawTemplateEngine;
+import pl.tjanek.sleek.template.engine.TemplateEngine;
 
 import javax.annotation.PostConstruct;
 import java.util.List;

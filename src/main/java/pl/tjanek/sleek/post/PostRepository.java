@@ -4,7 +4,7 @@ import com.google.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
-import pl.tjanek.sleek.template.engine.TemplatesProcessor;
+import pl.tjanek.sleek.template.TemplatesProcessor;
 import pl.tjanek.sleek.template.Template;
 
 import javax.annotation.PostConstruct;
