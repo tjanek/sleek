@@ -14,6 +14,7 @@ Sleek is a lightweight static blog generator using Java, Spring Boot, Undertow a
 #### v.0.2 ####
 > * Config
 > * Tasks for generate content
+> * Deploy to Github pages
  
 #### v.0.3 ####
 > * Themes
