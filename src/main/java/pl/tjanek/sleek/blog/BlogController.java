@@ -1,4 +1,4 @@
-package pl.tjanek.sleek;
+package pl.tjanek.sleek.blog;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
